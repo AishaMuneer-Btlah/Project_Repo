@@ -8,7 +8,7 @@ class AppDrawer extends StatelessWidget {
      children: [
        UserAccountsDrawerHeader(accountName: Text('Aisha Muneer'), accountEmail:Text('aishamuneer@gmail.com'),
        currentAccountPicture: CircleAvatar(
-         backgroundColor: Colors.amberAccent,
+         backgroundColor: Colors.brown,
        ),
        otherAccountsPictures: [
          CircleAvatar(
