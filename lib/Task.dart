@@ -12,7 +12,17 @@ class Task extends StatelessWidget {
         backgroundColor: Colors.brown,
       ),
       drawer: AppDrawer() ,
-      body : Center (child : Container(
+      body :Row(children: [
+        Expanded(
+          flex: 75,
+            child: Container(color: Colors.grey,)),
+        Expanded(
+            flex: 25,
+            child: Container(color: Colors.black12,)),
+
+      ],),
+
+     /* Center (child : Container(
        height: 100, width: 100,
         decoration: BoxDecoration(
           color: Colors.brown,
@@ -22,7 +32,7 @@ class Task extends StatelessWidget {
      child:Center(child:
      Icon(Icons.card_giftcard_rounded, color: Colors.white,size: 50,)
      //Text('Aisha',style: TextStyle( color: Colors.white,fontWeight: FontWeight.bold , fontSize: 20),)
-       , )) ,)
+       , )) ,)*/
     ),);
   }
 }
